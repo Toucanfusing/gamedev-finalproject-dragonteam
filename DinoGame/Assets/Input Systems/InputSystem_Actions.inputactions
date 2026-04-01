@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "name": "InputSystem_Actions 1",
+    "name": "InputSystem_Actions",
     "maps": [
         {
             "name": "Player",
@@ -19,6 +19,15 @@
                     "name": "Jump",
                     "type": "Button",
                     "id": "537e2927-0d9b-4e9e-975a-d154ca654949",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "click",
+                    "type": "Button",
+                    "id": "5030afd7-49eb-468a-8d9c-136c6d92c1f3",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -210,6 +219,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c853f1a3-9af1-4afb-a5f7-8af7f5bdeddd",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "click",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
