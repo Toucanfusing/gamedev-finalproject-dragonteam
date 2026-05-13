@@ -11,6 +11,8 @@ public class Dialougescript : MonoBehaviour
     public float textSpeed;
     private int index;
     private InputSystem_Actions ctrl;
+    private GameObject standNear;
+    private int triggerCount;
 
 
     
@@ -23,7 +25,6 @@ public class Dialougescript : MonoBehaviour
     void Start()
     {
         textComponent.text = string.Empty;
-        StartDialouge();
         ctrl = new InputSystem_Actions();
         ctrl.Enable();
         ctrl.Player.click.started += NextLine;
@@ -35,7 +36,7 @@ public class Dialougescript : MonoBehaviour
     }
     
     
-    void StartDialouge()
+    public void StartDialouge()
     {
     index = 0;
     StartCoroutine(TypeLine());
@@ -63,5 +64,8 @@ public class Dialougescript : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+
     }
-}
+    
+    }
+    
